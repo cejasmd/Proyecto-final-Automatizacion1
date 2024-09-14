@@ -13,7 +13,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
     reporter: [
       ['list'],
-      ['html', { outputFolder: 'playwright-report', open: 'never' }]
+      ['html', { outputFolder: 'playwright-report', open: 'always' }]
     ],
   testDir: './tests',
   /* Run tests in files in parallel */
